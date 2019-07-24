@@ -1,0 +1,322 @@
+ img{
+    max-width: 100%;
+}
+
+
+.custom-body{
+    overflow: hidden;
+}
+
+/* Section Introduction */
+
+ .col-intro-left{
+    padding-top: 150px;
+}
+
+.intro-phone{
+    text-align: center;
+}
+
+.intro-row{
+    padding-top: 50px;
+}
+.intro-header{
+    font-size: 78px;
+    font-weight: 300;
+    margin-bottom: 25px;
+}
+.intro-text{
+    font-size: 20px;
+    margin-bottom: 50px;
+    color: #bcb8b8;
+}
+
+.app-btn{
+    background: #202020;
+    display: inline-block;
+    width: 200px;
+}
+
+
+/* Phone Info. Section 1 */
+
+.info-header{
+    font-size: 38px;
+    font-weight: 300;
+}
+.info-text{
+    font-size: 20px;
+    color: #bcb8b8;
+}
+.icon{
+    font-size: 54px;
+    margin-bottom: 20px;
+}
+.feature-info{
+    font-size: 14px;
+    color: #bcb8b8;
+}
+.row-padding{
+ padding-top: 25px;
+ padding-bottom: 25px;
+}
+
+/* Phone Info. Section 2 */
+.phone-img{
+    text-align: center;
+    height: 490px;
+    overflow: hidden;
+    position: relative;
+}
+.display-front{
+    position: relative;
+    z-index: 5;
+    width: 350px;
+    margin-right: -85px;
+}
+.display-back{
+    width: 290px;
+    position: relative;
+    z-index: 4;
+    margin-left: -85px;
+}
+.bg-color{
+    background: #F2F2F2;
+}
+
+.get-start-btn{
+    border: 1px solid #C0C0C0;
+    padding: 8px 25px;
+    color: #202020;
+    font-weight: 500;
+}
+
+.get-start-btn:hover{
+    border: 1px solid #202020;
+    padding: 8px 25px;
+    color: #C0C0C0;
+    font-weight: 500;
+    background: #202020;
+}
+
+/* Phone Info. Section 3 */
+.phone-info-3{
+    z-index: 20;
+    background: #FFF;
+}
+.display-front-Section-3{
+    width: 290px;
+    position: relative;
+    z-index: 4;
+    margin-right: -80px;
+    margin-left: auto;
+}
+.display-back-Section-3{
+    position: relative;
+    z-index: 5;
+    width: 350px;
+    margin-left: -80px;
+    margin-right: auto;
+}
+
+/* Phone Info. Section 4 */
+.screenshots{
+    font-size: 34px;
+    font-weight: 700;
+}
+.features-icon{
+    padding-top: 50px;
+}
+
+/* Phone Info. video Section */
+.video-header{
+    margin-top: 0;
+    font-size: 34px;
+    line-height: 1.4em;
+    margin-bottom: 20px;
+    font-weight: 300;
+}
+.video-text{
+    color: #827f7f;
+    font-size: 12px;
+}
+.video{
+    width: 100%;
+    height: 350px;
+}
+.video-row{
+    padding-top: 100px;
+    padding-bottom: 50px;
+}
+.video-info{
+    padding-top: 100px;
+}
+
+/* Phone Info. plan Section */
+.plan-row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.get-free-trial{
+    border: 1px solid #C0C0C0;
+    padding: 8px 25px;
+    color: #202020;
+    font-weight: 500;
+    background: #FFF;
+}
+
+.get-free-trial:hover{
+    border: 1px solid #202020;
+    padding: 8px 25px;
+    color: #C0C0C0;
+    font-weight: 500;
+    background: #202020;
+}
+.plan-card{
+    border: 2px solid #C0C0C0;
+}
+.plan-name{
+    font-size: 24px;
+    font-weight: 700;
+    padding-top: 50px;
+}
+.currency {
+    vertical-align: top;
+    line-height: 1em;
+    top: 40px;
+    display: inline-block;
+    position: relative;
+}
+.amount{
+    font-size: 84px;
+    font-weight: 600;
+    display: inline-block;
+    position: relative;
+}
+.period {
+    line-height: 1em;
+    vertical-align: baseline;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    bottom: 5px;
+    color: rgba(0,0,0,.4);
+    display: inline-block;
+    position: relative;
+}
+
+.specifications-item{
+    color: #827f7f;
+}
+
+.sign-up-btn{
+    padding-bottom: 60px;
+}
+
+
+.back-bg-color{
+    background: #202020;
+}
+.subscribe-row{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+.subscribe-header{
+    color: #FFF;
+    font-size: 24px;
+    letter-spacing: 2px;
+    margin-top: 0;
+    margin-bottom: 35px;
+}
+
+.form-control-custom, .input-group-text{
+    background: #202020;
+    color: #FFF;
+}
+
+.input-group{
+    width: 600px;
+    width: 50%;
+    margin: auto;
+}
+.subscribe-footer{
+    color: white;
+    font-size: 14px;
+}
+.col-padding{
+    padding: 1px;
+}
+.team-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/* client-section */
+
+.client-section{
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.client-header{
+    font-size: 34px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+.client-text{
+    color: #4c454566;
+}
+.logo-card{
+    border: solid 1px #C0C0C0;
+    width: 31%;
+    padding: 25px;
+    display: inline-block;
+    opacity: 0.4;
+}
+.logo-card:hover{
+    opacity: 1;
+}
+
+.download-app-header{
+    font-size: 48px;
+    font-weight: 300;
+    margin-bottom: 25px;
+    color: white;
+}
+.download-app-text{
+    font-size: 16px;
+    color: white;
+}
+.btn-border{
+    border: 1px solid white;
+}
+
+
+/* contact us */
+.form-control-contact-us{
+    padding: 11px;
+    height: auto;
+    border: solid 1px #C0C0C0;
+    border-radius: 0;
+    -webkit-box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    box-shadow: none !important;
+    background: transparent;
+}
+
+.send-message{
+    border: 1px solid #C0C0C0;
+    padding: 8px 25px;
+    color: #202020;
+    font-weight: 500;
+    background: #FFF;
+    width: 100%;
+}
+
+.send-message:hover{
+    border: 1px solid #202020;
+    padding: 8px 25px;
+    color: #C0C0C0;
+    font-weight: 500;
+    background: #202020;
+    width: 100%;
+}
