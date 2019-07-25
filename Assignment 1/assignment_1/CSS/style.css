@@ -2,12 +2,42 @@
     max-width: 100%;
 }
 
+.body-border{
+    border-left: 25px solid #E7E7E7;
+    border-right: 25px solid #E7E7E7;
+}
 
 .custom-body{
     overflow: hidden;
 }
 
+/* loader */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: #FFF;
+    z-index: 999;
+}
+.loader {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 92px;
+    width: 92px;
+    margin: auto;
+    margin-top: -46px;
+}
+
 /* Section Introduction */
+
+.introduction-container-border{
+    border-top: 25px solid #E7E7E7;
+    border-bottom: 25px solid #E7E7E7;
+}
 
  .col-intro-left{
     padding-top: 150px;
@@ -196,7 +226,6 @@
 .period {
     line-height: 1em;
     vertical-align: baseline;
-    text-transform: uppercase;
     letter-spacing: 2px;
     bottom: 5px;
     color: rgba(0,0,0,.4);
@@ -234,7 +263,7 @@
 }
 
 .input-group{
-    width: 600px;
+    /* width: 600px; */
     width: 50%;
     margin: auto;
 }
@@ -289,7 +318,22 @@
 .btn-border{
     border: 1px solid white;
 }
-
+.testimonial{
+     padding-top: 18px;
+    padding-bottom: 20px;
+    font-size: 21px;
+    font-weight: 300;
+    text-align: justify;
+}
+.client-name{
+    font-size: 18;
+    letter-spacing: 2PX;
+    font-weight: bold;
+}
+.client-designation{
+    color: #4c454566;
+    font-size: 13px;
+}
 
 /* contact us */
 .form-control-contact-us{
@@ -297,15 +341,13 @@
     height: auto;
     border: solid 1px #C0C0C0;
     border-radius: 0;
-    -webkit-box-shadow: none !important;
-    -moz-box-shadow: none !important;
     box-shadow: none !important;
     background: transparent;
 }
 
 .send-message{
     border: 1px solid #C0C0C0;
-    padding: 8px 25px;
+    padding: 10px 25px;
     color: #202020;
     font-weight: 500;
     background: #FFF;
@@ -314,9 +356,176 @@
 
 .send-message:hover{
     border: 1px solid #202020;
-    padding: 8px 25px;
+    padding: 10px 25px;
     color: #C0C0C0;
     font-weight: 500;
     background: #202020;
     width: 100%;
+}
+
+.contact-us-container{
+    padding: 75px 0px 75px 0px;
+}
+
+footer {
+    padding: 35px 0;
+    background: #E7E7E7;
+}
+
+/* FAQ */
+.question{
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin: 0;
+    font-size: 16px;
+    margin-bottom: 4px;
+}
+.faq-ans{
+    color: #4c454566;
+}
+
+
+/* menu bar */
+.menu-btn {
+    position: fixed;
+    display: block;
+    top: 25px;
+    right: 25px;
+    color: #FFF;
+    z-index: 199;
+    padding: 16px;
+    background: #202020;
+}
+
+.menu-btn > .lines {
+    display: block;
+    width: 33px;
+    height: 19px;
+    position: relative;
+}
+
+.menu-btn > .lines > span {
+    height: 1px;
+    width: 100%;
+    display: block;
+    background: #FFF;
+    position: absolute;
+    left: 0;
+}
+
+.menu-btn > .lines > .l1 {
+    top: 0;
+}
+
+.menu-btn > .lines > .l2 {
+    top: 9px;
+}
+
+.menu-btn > .lines > .l3 {
+    top: 18px;
+}
+
+
+.menu{
+    position: fixed;
+    z-index: 99;
+    top: 25px;
+    right: 91px;
+    background: #202020;
+    height: 51px;
+    line-height: 51px;
+    color: #FFF;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.menu > ul > li {
+    display: inline-block;
+    zoom: 1;
+    margin: 0 10px;
+}
+.nav-item-color{
+    color: #d3cbcb;
+    font-weight: 600;
+}
+.nav-item-color:hover
+{
+    color: #fff
+}
+
+body.show-menu .menu {
+   display: none;
+}
+
+
+
+@media screen and ( max-width: 768px){
+    .col-intro-left, .video-info{
+        padding-top: 0px;
+    }
+
+
+    .text-center-small{
+        text-align: center !important;
+    }
+
+    .display-front{
+        width: 200px;
+        position: relative;
+        z-index: 5;
+        margin-right: -85px;
+    }
+
+    .display-back{
+        width: 180px;
+        position: relative;
+        z-index: 4;
+        margin-left: -85px;
+    }
+
+    .display-front-Section-3{
+        width: 180px;
+        position: relative;
+        z-index: 4;
+        margin-right: -80px;
+        margin-left: auto;
+    }
+    .display-back-Section-3{
+        position: relative;
+        z-index: 5;
+        width: 200px;
+        margin-left: -100px;
+        margin-right: auto;
+    }
+
+    .input-group{
+        /* width: 600px; */
+        width: 100%;
+        margin: auto;
+    }
+
+    .menu {
+    position: fixed;
+    z-index: 99;
+    top: 0px;
+    right: 0px;
+    background: #202020;
+    height: 100%;
+    width:100%;
+    text-align: center;
+    line-height: 51px;
+    color: #FFF;
+    letter-spacing: 1px;
+    display: block;
+}
+
+.menu > ul > li {
+    display: block;
+}
+
+.menu-list{
+    padding-top: 120px;
+}
+
 }

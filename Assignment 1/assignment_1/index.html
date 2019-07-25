@@ -11,450 +11,675 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
     <link rel="stylesheet" type='text/css' href="CSS/style.css">
     <link rel='stylesheet' type='text/css' href='css/ionicons.min.css'>
-    <link rel='stylesheet' type='text/css' href='css/owl.carousel.css'>
+    <!--<link rel='stylesheet' type='text/css' href='css/owl.carousel.css'> -->
+
+
+    <!-- OwlCarousel2 CDN path -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel='stylesheet' type='text/css' href='css/magnific-popup.css'>
+
     </link>
 </head>
 
-<body>
-    <!-- Introduction Section -->
-    <div class="container">
-        <div class="row intro-row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-intro-left">
-                <div class="intro-header"> Mi App </div>
-                <div class="intro-text"> This is the coolest app you've ever seen, the amazing and great app
-                    made with love just for you</div>
-                <div class="intro-btns">
-                    <a href="javascript:void(0)" class="app-btn">
-                        <img src="./img/appstore.png">
-                    </a>
-                    <a href="javascript:void(0)" class="app-btn ml-4">
-                        <img src="./img/googleplay.png">
-                    </a>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="intro-phone">
-                    <img src="./img/phone1.png">
-                </div>
-            </div>
+<body class="body-border show-menu" onload="showLoader()">
+
+    <!-- page loader start-->
+    <div id="preloader">
+        <div class="loader">
+            <img src="img/loader.gif">
         </div>
     </div>
+    <!-- page loader end-->
 
-    <!-- Phone Info. Section 1 -->
-    <div class="container">
-        <div class="row pt-5 pb-5">
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12">
-                <div class="intro-phone pb-5">
-                    <img src="./img/phone2.png">
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
-                <div class="info-header">An App That You'll Love</div>
-                <div class="info-text">
-                    This app has a lot of cool features, you'll love them all. Lorem ipsum dolor sit amet is simply a
-                    dummy text used by
-                    lazy guys.
-                </div>
-            </div>
-        </div>
-        <div class="row pb-5">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="icon">
-                    <i class="ion-ios-heart-outline"></i>
-                    <h4>MADE WITH LOVE</h4>
-                    <div class="feature-info">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
-                        mediocritatem an, cule
-                        dicta iriure.</div>
-                </div>
-            </div>
 
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="icon">
-                    <i class="ion-ios-loop"></i>
-                    <h4>REGULAR UPDATES</h4>
-                    <div class="feature-info">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
-                        mediocritatem an, cule
-                        dicta iriure.</div>
-                </div>
-            </div>
-
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="icon">
-                    <i class="ion-ios-pie-outline"></i>
-                    <h4>BETTER REPORTS</h4>
-                    <div class="feature-info">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
-                        mediocritatem an, cule
-                        dicta iriure.</div>
-                </div>
-            </div>
-
-        </div>
+    <!-- menu bar start -->
+    <div href="javascript:void(0)" class="menu-btn">
+        <span class="lines">
+            <span class="l1"></span>
+            <span class="l2"></span>
+            <span class="l3"></span>
+        </span>
     </div>
 
-    <!-- Phone Info. Section 2 -->
-    <div class="bg-color">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-intro-left">
-                    <div class="phone-info-2">
-                        <div class="info-header pb-3">Simple & Clean</div>
-                        <div class="info-text pb-5">The best ever app, for you. You're just a moment away from
-                            installing
-                            this app.</div>
-                        <div class="get-start">
-                            <button class=" get-start-btn"> GET STARTED</button>
+    <nav class="menu">
+        <ul class="menu-list">
+            <li>
+                <a class="nav-item-color" href="#introduction">HOME</a>
+            </li>
+            <li>
+                <a class="nav-item-color" href="#features">FEATURES</a></li>
+            <li>
+                <a class="nav-item-color" href="#screenshots">SCREENSHOTS</a></li>
+            <li>
+                <a class="nav-item-color" href="#video">VIDEO</a>
+            </li>
+            <li>
+                <a class="nav-item-color" href="#pricing">PRICING</a>
+            </li>
+            <li>
+                <a class="nav-item-color" href="#contactUs">CONTACT US</a>
+            </li>
+        </ul>
+    </nav>
+    <!-- menu bar end -->
+
+    <div id="main-wrapper" style="display:none;">
+        <!-- Introduction Section -->
+        <div id="introduction" class="introduction-container-border">
+            <div class="container">
+                <div class="row intro-row text-center-small">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-intro-left">
+                        <div class="intro-header"> Mi App </div>
+                        <div class="intro-text"> This is the coolest app you've ever seen, the amazing and great app
+                            made with love just for you</div>
+                        <div class="intro-btns">
+                            <a href="javascript:void(0)" class="app-btn m-2">
+                                <img src="./img/appstore.png">
+                            </a>
+                            <a href="javascript:void(0)" class="app-btn m-2">
+                                <img src="./img/googleplay.png">
+                            </a>
                         </div>
                     </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 pt-5">
-                    <div class="phone-img">
-                        <img class="display-front" src="./img/phone-white.png">
-                        <img class="display-back" src="./img/phone-black.png">
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- Phone Info. Section 3 -->
-    <div class="phone-info-3">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 pt-5">
-                    <div class="phone-img">
-                        <img class="display-front-Section-3" src="./img/phone-white.png">
-                        <img class="display-back-Section-3" src="./img/phone-black.png">
-                    </div>
-                </div>
-                <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-intro-left">
-                    <div class="phone-info-3">
-                        <div class="info-header pb-3">Most Powerful</div>
-                        <div class="info-text pb-5">The best ever app, for you. You're just a moment away from
-                            installing
-                            this app.</div>
-                        <div class="get-start">
-                            <button class=" get-start-btn"> GET STARTED</button>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="intro-phone">
+                            <img src="./img/phone1.png">
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Phone Info. Section 4 -->
-    <div class="bg-color">
-        <div class="container">
-            <div class="row pt-5">
-                <div class="col-12 text-center">
-                    <strong class="screenshots pb-5">SCREENSHOTS</strong>
-                    <div class="info-text pb-5">Take a look at the app by its screenshots</div>
+        <!-- Phone Info. Section 1 -->
+        <div class="container" id="features">
+            <div class="row pt-5 pb-5">
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12">
+                    <div class="intro-phone pb-5">
+                        <img src="./img/phone2.png">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-12 col-lg-12 text-center">
+                    <div class="info-header">An App That You'll Love</div>
+                    <div class="info-text">
+                        This app has a lot of cool features, you'll love them all. Lorem ipsum dolor sit amet is simply
+                        a
+                        dummy text used by
+                        lazy guys.
+                    </div>
+                </div>
+            </div>
+            <div class="row pb-5">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="icon text-center-small">
+                        <i class="ion-ios-heart-outline"></i>
+                        <h4>MADE WITH LOVE</h4>
+                        <div class="feature-info">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
+                            mediocritatem an, cule
+                            dicta iriure.</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="icon text-center-small">
+                        <i class="ion-ios-loop"></i>
+                        <h4>REGULAR UPDATES</h4>
+                        <div class="feature-info">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
+                            mediocritatem an, cule
+                            dicta iriure.</div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4">
+                    <div class="icon text-center-small">
+                        <i class="ion-ios-pie-outline"></i>
+                        <h4>BETTER REPORTS</h4>
+                        <div class="feature-info">Lorem ipsum dolor sit amet, in quodsi vulputate pro. Ius illum vocent
+                            mediocritatem an, cule
+                            dicta iriure.</div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+        <!-- Phone Info. Section 2 -->
+        <div class="bg-color">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-intro-left">
+                        <div class="phone-info-2 text-center-small">
+                            <div class="info-header pb-3">Simple & Clean</div>
+                            <div class="info-text pb-5">The best ever app, for you. You're just a moment away from
+                                installing
+                                this app.</div>
+                            <div class="get-start">
+                                <button class=" get-start-btn"> GET STARTED</button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pt-5">
+                        <div class="phone-img">
+                            <img class="display-front" src="./img/phone-white.png">
+                            <img class="display-back" src="./img/phone-black.png">
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Phone Info. Section 5 -->
-    <div class="container">
-        <div class="row pt-5">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-right">
-                <div class="icon features-icon">
-                    <i class="ion-ios-heart-outline"></i>
-                    <h4>BEAUTIFUL DESIGN</h4>
-                    <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda
-                        inciderint has.</div>
-                </div>
-                <div class="icon features-icon">
-                    <i class="ion-ios-loop"></i>
-                    <h4>REGULAR UPDATES</h4>
-                    <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda
-                        inciderint has.</div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="phone-features-img">
-                    <img src="img/phone3.png">
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-left">
-                <div class="icon features-icon">
-                    <i class="ion-ios-cart-outline"></i>
-                    <h4>CART SYSTEM</h4>
-                    <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda
-                        inciderint has.</div>
-                </div>
-                <div class="icon features-icon">
-                    <i class="ion-ios-color-wand-outline"></i>
-                    <h4>MAGICAL APP</h4>
-                    <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam expetenda
-                        inciderint has.</div>
+        <!-- Phone Info. Section 3 -->
+        <div class="phone-info-3">
+            <div class="container">
+                <div class="row text-center-small">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pt-5">
+                        <div class="phone-img">
+                            <img class="display-front-Section-3" src="./img/phone-white.png">
+                            <img class="display-back-Section-3" src="./img/phone-black.png">
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 col-intro-left">
+                        <div class="phone-info-3">
+                            <div class="info-header pb-3">Most Powerful</div>
+                            <div class="info-text pb-5">The best ever app, for you. You're just a moment away from
+                                installing
+                                this app.</div>
+                            <div class="get-start">
+                                <button class=" get-start-btn"> GET STARTED</button>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <!-- Phone Info. video Section  -->
-    <div class="bg-color">
+        <!-- Phone Info. Section 4 -->
+        <div class="bg-color" id="screenshots">
+            <div class="container">
+                <div class="row pt-5">
+                    <div class="col-12 text-center">
+                        <strong class="screenshots pb-5">SCREENSHOTS</strong>
+                        <div class="info-text pb-5">Take a look at the app by its screenshots</div>
+                    </div>
+                </div>
+                <!-- <div class="row">
+                    <div class="col-12"> -->
+                <div class="owl-carousel owl-theme">
+                    <div class="item">
+                        <img src="img/screens/1.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/2.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/3.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/4.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/5.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/6.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/7.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/8.jpg">
+                    </div>
+                    <div class="item">
+                        <img src="img/screens/9.jpg">
+                    </div>
+                </div>
+                <!-- </div>
+                </div> -->
+            </div>
+        </div>
+
+        <!-- Phone Info. Section 5 -->
         <div class="container">
-            <div class="row video-row">
+            <div class="row pt-5 ">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-right text-center-small">
+                    <div class="icon features-icon">
+                        <i class="ion-ios-heart-outline"></i>
+                        <h4>BEAUTIFUL DESIGN</h4>
+                        <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam
+                            expetenda
+                            inciderint has.</div>
+                    </div>
+                    <div class="icon features-icon">
+                        <i class="ion-ios-loop"></i>
+                        <h4>REGULAR UPDATES</h4>
+                        <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam
+                            expetenda
+                            inciderint has.</div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-center-small">
+                    <div class="phone-features-img">
+                        <img src="img/phone3.png">
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 text-left text-center-small">
+                    <div class="icon features-icon">
+                        <i class="ion-ios-cart-outline"></i>
+                        <h4>CART SYSTEM</h4>
+                        <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam
+                            expetenda
+                            inciderint has.</div>
+                    </div>
+                    <div class="icon features-icon">
+                        <i class="ion-ios-color-wand-outline"></i>
+                        <h4>MAGICAL APP</h4>
+                        <div class="feature-info">Ad oportere voluptatibus nec, sea ei civibus praesent. At timeam
+                            expetenda
+                            inciderint has.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phone Info. video Section  -->
+        <div class="bg-color" id="video">
+            <div class="container">
+                <div class="row video-row">
+                    <div class="col-12 col-sm-12 col-md-4 col-lg-4 pb-5">
+                        <div class="video-info">
+                            <div class="video-header">Easily embed a cool video for your app</div>
+                            <div class="video-text">No dolorem blandit theophrastus eos, nam eu persecuti repudiandae,
+                                duo
+                                hinc vide aliquip et. Ex atqui voluptatibus eum,
+                                cu case intellegebat eum, mea ex regione patrioque signiferumque. Pri ei solet graecis.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8">
+                        <iframe class="video" src="https://www.youtube.com/embed/GIalL5fkhPM?rel=0&amp;showinfo=0"
+                            frameborder="0" allowfullscreen="" id="fitvid0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Phone Info. plan Section  -->
+        <div class="container" id="pricing">
+            <div class="row plan-row">
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 pt-3 pb-3">
+                    <div class="video-info">
+                        <div class="video-header">Choose your plan or get started with free trial</div>
+                        <div class="video-text pb-5">Semper torquatos est no. cule at discere offendit, cule et fugit
+                            iuvaret
+                            omittam. Eu sint labore pri, ea probo tollit
+                            lobortis mea. Integre blandit aliquando ei vel, sit eirmod vituperata eu.
+                        </div>
+                        <div class="free-trial">
+                            <button class="get-free-trial"> GET FREE TRIAL</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 pt-3 pb-3">
+                    <div class=" plan-card text-center">
+                        <div class="plan-name">BASIC</div>
+                        <div class="price">
+                            <div class="currency">$</div>
+                            <div class="amount">13</div>
+                            <div class="period">/mo</div>
+                        </div>
+
+                        <div class="specifications">
+                            <p class="specifications-item">1TB Storage</p>
+                            <p class="specifications-item">Late Support</p>
+                            <p class="specifications-item">3 Tasks /day</p>
+                        </div>
+
+                        <div class="free-trial sign-up-btn">
+                            <button class="get-free-trial"> SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-4 col-lg-4 pt-3 pb-3">
+                    <div class=" plan-card text-center">
+                        <div class="plan-name">PRO</div>
+                        <div class="price">
+                            <div class="currency">$</div>
+                            <div class="amount">24</div>
+                            <div class="period">/mo</div>
+                        </div>
+
+                        <div class="specifications">
+                            <p class="specifications-item">2TB Storage</p>
+                            <p class="specifications-item">Instant Support</p>
+                            <p class="specifications-item">Unlimited Tasks</p>
+                        </div>
+
+                        <div class="free-trial sign-up-btn">
+                            <button class="get-free-trial"> SIGN UP</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- subscribe section -->
+
+        <div class="back-bg-color">
+            <div class="container">
+                <div class="row subscribe-row">
+                    <div class="col-12 text-center">
+                        <div class="subscribe-header">SUBSCRIBE TO NEWSLETTER</div>
+                    </div>
+                    <div class="col-12">
+                        <div class="input-group mb-3">
+                            <input type="text" class="form-control form-control-custom" placeholder="Your Email">
+                            <div class="input-group-append">
+                                <span class="input-group-text"><strong>SUBSCRIBE</strong></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 text-center">
+                        <div class="subscribe-footer">
+                            Don't worry, we will never sell or share your info
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- team section -->
+        <div class="container">
+            <div class="row team-section">
                 <div class="col-12 col-sm-12 col-md-4 col-lg-4">
                     <div class="video-info">
-                        <div class="video-header">Easily embed a cool video for your app</div>
-                        <div class="video-text">No dolorem blandit theophrastus eos, nam eu persecuti repudiandae, duo
+                        <div class="video-header">Meet the geniuses behind this amazing app</div>
+                        <div class="video-text pb-5">No dolorem blandit theophrastus eos, nam eu persecuti repudiandae,
+                            duo
                             hinc vide aliquip et. Ex atqui voluptatibus eum,
-                            cu case intellegebat eum, mea ex regione patrioque signiferumque. Pri ei solet graecis.
+                            cu case intellegebat eum, mea ex regione patrioque signiferumque.
+                        </div>
+                        <div class="free-trial">
+                            <button class="get-free-trial">JOIN OUR TEAM</button>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 col-sm-12 col-md-8 col-lg-8">
-                    <iframe class="video" src="https://www.youtube.com/embed/GIalL5fkhPM?rel=0&amp;showinfo=0"
-                        frameborder="0" allowfullscreen="" id="fitvid0"></iframe>
-                </div>
-            </div>
-        </div>
-    </div>
+                <div class="col-12 col-sm-12 col-md-8 col-lg-8 pt-5">
+                    <div class="team-persons">
+                        <div class="row">
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
+                                <div class="team-member">
+                                    <img src="img/people1.jpg">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
+                                <div class="team-member">
+                                    <img src="img/people2.jpg">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
+                                <div class="team-member">
+                                    <img src="img/people3.jpg">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
+                                <div class="team-member">
+                                    <img src="img/people4.jpg">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
+                                <div class="team-member">
+                                    <img src="img/people5.jpg">
+                                </div>
+                            </div>
+                            <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
+                                <div class="team-member">
+                                    <img src="img/people6.jpg">
+                                </div>
+                            </div>
 
-    <!-- Phone Info. plan Section  -->
-    <div class="container">
-        <div class="row plan-row">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="video-info">
-                    <div class="video-header">Choose your plan or get started with free trial</div>
-                    <div class="video-text pb-5">Semper torquatos est no. cule at discere offendit, cule et fugit
-                        iuvaret
-                        omittam. Eu sint labore pri, ea probo tollit
-                        lobortis mea. Integre blandit aliquando ei vel, sit eirmod vituperata eu.
-                    </div>
-                    <div class="free-trial">
-                        <button class="get-free-trial"> GET FREE TRIAL</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class=" plan-card text-center">
-                    <div class="plan-name">BASIC</div>
-                    <div class="price">
-                        <div class="currency">$</div>
-                        <div class="amount">13</div>
-                        <div class="period">/mo</div>
-                    </div>
-
-                    <div class="specifications">
-                        <p class="specifications-item">1TB Storage</p>
-                        <p class="specifications-item">Late Support</p>
-                        <p class="specifications-item">3 Tasks /day</p>
-                    </div>
-
-                    <div class="free-trial sign-up-btn">
-                        <button class="get-free-trial"> SIGN UP</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class=" plan-card text-center">
-                    <div class="plan-name">PRO</div>
-                    <div class="price">
-                        <div class="currency">$</div>
-                        <div class="amount">24</div>
-                        <div class="period">/mo</div>
-                    </div>
-
-                    <div class="specifications">
-                        <p class="specifications-item">2TB Storage</p>
-                        <p class="specifications-item">Instant Support</p>
-                        <p class="specifications-item">Unlimited Tasks</p>
-                    </div>
-
-                    <div class="free-trial sign-up-btn">
-                        <button class="get-free-trial"> SIGN UP</button>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
 
+        <!-- client section -->
+        <div class="bg-color">
+            <div class="container">
+                <div class="client-section">
+                    <div class="row pb-5">
+                        <div class="col-12 text-center">
+                            <div class="client-header">OUR CLIENTS</div>
+                            <div class="client-text">Take a look at our clients and see what they say about us</div>
+                        </div>
+                    </div>
+                    <div class="row pb-5">
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                            <div class="logo-card">
+                                <img src="img/logo1.png">
+                            </div>
+                            <div class="logo-card">
+                                <img src="img/logo1.png">
+                            </div>
+                            <div class="logo-card">
+                                <img src="img/logo1.png">
+                            </div>
+                            <div class="logo-card">
+                                <img src="img/logo1.png">
+                            </div>
+                            <div class="logo-card">
+                                <img src="img/logo1.png">
+                            </div>
+                            <div class="logo-card">
+                                <img src="img/logo1.png">
+                            </div>
+                        </div>
+                        <div class="col-12 col-sm-12 col-md-6 col-lg-6">
 
-    <!-- subscribe section -->
+                            <div id="demo" class="carousel slide" data-ride="carousel">
 
-    <div class="back-bg-color">
-        <div class="container">
-            <div class="row subscribe-row">
-                <div class="col-12 text-center">
-                    <div class="subscribe-header">SUBSCRIBE TO NEWSLETTER</div>
-                </div>
-                <div class="col-12">
-                    <div class="input-group mb-3">
-                        <input type="text" class="form-control form-control-custom" placeholder="Your Email">
-                        <div class="input-group-append">
-                            <span class="input-group-text"><strong>SUBSCRIBE</strong></span>
+                                <!-- Indicators -->
+                                <ul class="carousel-indicators">
+                                    <li data-target="#demo" data-slide-to="0" class="active"></li>
+                                    <li data-target="#demo" data-slide-to="1"></li>
+                                    <li data-target="#demo" data-slide-to="2"></li>
+                                </ul>
+
+                                <!-- The slideshow -->
+                                <div class="carousel-inner">
+                                    <div class="carousel-item active">
+                                        <div class="testimonial">An has alterum nominavi. Nam at elitr veritus
+                                            voluptaria.
+                                            Cu eum regione tacimates vituperatoribus, ut mutat delenit
+                                            est. Adhuc scripserit et sea, everti liberavisse no sit.</div>
+                                        <div class="client-name">
+                                            MICHAEL DOE
+                                        </div>
+                                        <div class="client-designation">
+                                            CEO @ Google
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="testimonial">An has alterum nominavi. Nam at elitr veritus
+                                            voluptaria.
+                                            Cu eum regione tacimates vituperatoribus, ut mutat delenit
+                                            est. Adhuc scripserit et sea, everti liberavisse no sit.</div>
+                                        <div class="client-name">
+                                            MICHAEL DOE
+                                        </div>
+                                        <div class="client-designation">
+                                            CEO @ Google
+                                        </div>
+                                    </div>
+                                    <div class="carousel-item">
+                                        <div class="testimonial">An has alterum nominavi. Nam at elitr veritus
+                                            voluptaria.
+                                            Cu eum regione tacimates vituperatoribus, ut mutat delenit
+                                            est. Adhuc scripserit et sea, everti liberavisse no sit.</div>
+                                        <div class="client-name">
+                                            MICHAEL DOE
+                                        </div>
+                                        <div class="client-designation">
+                                            CEO @ Google
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
                         </div>
                     </div>
                 </div>
-                <div class="col-12 text-center">
-                    <div class="subscribe-footer">
-                        Don't worry, we will never sell or share your info
-                    </div>
-                </div>
+
             </div>
         </div>
-    </div>
 
-
-    <!-- team section -->
-    <div class="container">
-        <div class="row team-section">
-            <div class="col-12 col-sm-12 col-md-4 col-lg-4">
-                <div class="video-info">
-                    <div class="video-header">Meet the geniuses behind this amazing app</div>
-                    <div class="video-text pb-5">No dolorem blandit theophrastus eos, nam eu persecuti repudiandae, duo
-                        hinc vide aliquip et. Ex atqui voluptatibus eum,
-                        cu case intellegebat eum, mea ex regione patrioque signiferumque.
-                    </div>
-                    <div class="free-trial">
-                        <button class="get-free-trial">JOIN OUR TEAM</button>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-8 col-lg-8 pt-5">
-                <div class="team-persons">
-                    <div class="row">
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
-                            <div class="team-member">
-                                <img src="img/people1.jpg">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
-                            <div class="team-member">
-                                <img src="img/people2.jpg">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
-                            <div class="team-member">
-                                <img src="img/people3.jpg">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
-                            <div class="team-member">
-                                <img src="img/people4.jpg">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
-                            <div class="team-member">
-                                <img src="img/people5.jpg">
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-12 col-md-4 col-lg-4 col-padding">
-                            <div class="team-member">
-                                <img src="img/people6.jpg">
-                            </div>
-                        </div>
-
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- client section -->
-    <div class="bg-color">
+        <!-- FAQ -->
         <div class="container">
             <div class="client-section">
                 <div class="row pb-5">
                     <div class="col-12 text-center">
-                        <div class="client-header">OUR CLIENTS</div>
-                        <div class="client-text">Take a look at our clients and see what they say about us</div>
+                        <div class="client-header">FAQ</div>
+                        <div class="client-text">Most common questions, answered here</div>
                     </div>
                 </div>
+                <div class="row">
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-3">
+                        <div class="question">WHY IS THIS SO CHEAP?</div>
+                        <div class="faq-ans">An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
+                            tacimates vituperatoribus, ut mutat delenit
+                            est. Adhuc scripserit et sea.</div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-3">
+                        <div class="question">HOW MANY DAYS WILL YOU GET TRIAL?</div>
+                        <div class="faq-ans">An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
+                            tacimates vituperatoribus, ut mutat delenit
+                            est. Adhuc scripserit et sea.</div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-3">
+                        <div class="question">WHY CHOOSE US?</div>
+                        <div class="faq-ans">An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
+                            tacimates vituperatoribus, ut mutat delenit
+                            est. Adhuc scripserit et sea.</div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-3">
+                        <div class="question">WHAT CAN I DO WITH THIS APP?</div>
+                        <div class="faq-ans">An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
+                            tacimates vituperatoribus, ut mutat delenit
+                            est. Adhuc scripserit et sea.</div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-3">
+                        <div class="question">WHAT WILL YOU GET?</div>
+                        <div class="faq-ans">An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
+                            tacimates vituperatoribus, ut mutat delenit
+                            est. Adhuc scripserit et sea.</div>
+                    </div>
+
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6 pb-3">
+                        <div class="question">WHY IS THIS SO CHEAP?</div>
+                        <div class="faq-ans">An has alterum nominavi. Nam at elitr veritus voluptaria. Cu eum regione
+                            tacimates
+                            vituperatoribus, ut mutat delenit
+                            est. Adhuc scripserit et sea.</div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <!-- download app section -->
+
+        <div class="back-bg-color">
+            <div class="container">
+                <div class="row client-section">
+                    <div class="col-12 col-sm-12 col-md-8 col-lg-8 mx-auto text-center">
+                        <div class="download-app-header">Download App Now</div>
+                        <div class="download-app-text">
+                            Nam reformidans vituperatoribus at. Id nisl diceret maiestatis qui, mel affert doctus te. Ex
+                            assum ocurreret eam. Lorem
+                            ipsum dolor sit amet is simply a dummy text.
+                        </div>
+                        <div class="intro-btns pt-5 pb-5">
+                            <a href="javascript:void(0)" class="app-btn m-2 btn-border ">
+                                <img src="./img/appstore.png">
+                            </a>
+                            <a href="javascript:void(0)" class="app-btn m-2 btn-border">
+                                <img src="./img/googleplay.png">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- contact us form -->
+        <div class="container" id="contactUs">
+            <div class="contact-us-container">
                 <div class="row pb-5">
+                    <div class="col-12 text-center">
+                        <div class="client-header">CONTACT US</div>
+                        <div class="client-text">Feel free to contact us for any help</div>
+                    </div>
+                </div>
+                <div class="row pt-5">
                     <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                        <div class="logo-card">
-                            <img src="img/logo1.png">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-contact-us" placeholder="Name"
+                                name="name" required>
                         </div>
-                        <div class="logo-card">
-                            <img src="img/logo1.png">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-contact-us" placeholder="Email"
+                                name="email" required>
                         </div>
-                        <div class="logo-card">
-                            <img src="img/logo1.png">
-                        </div>
-                        <div class="logo-card">
-                            <img src="img/logo1.png">
-                        </div>
-                        <div class="logo-card">
-                            <img src="img/logo1.png">
-                        </div>
-                        <div class="logo-card">
-                            <img src="img/logo1.png">
+                        <div class="form-group">
+                            <input type="text" class="form-control form-control-contact-us" placeholder="Subject"
+                                name="subject" required>
                         </div>
                     </div>
-                </div>
-            </div>
+                    <div class="col-12 col-sm-12 col-md-6 col-lg-6">
+                        <div class="form-group">
+                            <textarea class="form-control form-control-contact-us" rows="3" placeholder="Message"
+                                style="height: 112px;" name="message" required></textarea>
+                        </div>
+                        <div class="message">
+                            <button class="send-message">SEND MESSAGE</button>
+                        </div>
 
-        </div>
-    </div>
-
-    <!-- download app section -->
-
-    <div class="back-bg-color">
-        <div class="container">
-            <div class="row client-section">
-                <div class="col-12 col-sm-12 col-md-8 col-lg-8 mx-auto text-center">
-                    <div class="download-app-header">Download App Now</div>
-                    <div class="download-app-text">
-                        Nam reformidans vituperatoribus at. Id nisl diceret maiestatis qui, mel affert doctus te. Ex
-                        assum ocurreret eam. Lorem
-                        ipsum dolor sit amet is simply a dummy text.
                     </div>
-                    <div class="intro-btns pt-5 pb-5">
-                        <a href="javascript:void(0)" class="app-btn btn-border ">
-                            <img src="./img/appstore.png">
-                        </a>
-                        <a href="javascript:void(0)" class="app-btn ml-4 btn-border">
-                            <img src="./img/googleplay.png">
-                        </a>
+                    <div>
                     </div>
                 </div>
+
             </div>
+
         </div>
+
+        <!-- footer -->
+        <footer>
+            <div class="container text-center">
+                <div>Copyright Mi App © 2016. a Noman Ali Samejo Production</div>
+            </div>
+        </footer>
+
     </div>
 
-    <!-- contact us form -->
 
-
-    <div class="container">
-        <div class="row">
-
-        </div>
-        <div class="row">
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-contact-us" placeholder="Name" name="name"
-                        required="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-contact-us" placeholder="Email" name="email"
-                        required="">
-                </div>
-                <div class="form-group">
-                    <input type="text" class="form-control form-control-contact-us" placeholder="Subject" name="subject"
-                        required="">
-                </div>
-            </div>
-            <div class="col-12 col-sm-12 col-md-6 col-lg-6">
-                <div class="form-group">
-                    <textarea class="form-control form-control-contact-us" rows="3" placeholder="Message" name="message"
-                        required=""></textarea>
-                </div>
-                <div class="message">
-                    <button class="send-message">SEND MESSAGE</button>
-                </div>
-
-            </div>
-            <div>
-
-            </div>
-        </div>
-    </div>
-
+    <script src="js/jquery.min.js"></script>
+    <script src="js/jquery.fitvids.js"></script>
+    <!-- <script src="js/owl.carousel.min.js"></script> -->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+    <script src="js/validator.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>
