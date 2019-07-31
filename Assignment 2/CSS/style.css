@@ -1,0 +1,373 @@
+.custom-navbar{
+    position:fixed;
+    top:0;
+    background:transparent;
+    width:100%;
+    height:70px;
+    z-index: 999;
+}
+
+.navbar-fixed-top.scrolled {
+  background-color: #fff !important;
+  transition: background-color 200ms linear;
+}
+
+.navbar-brand{
+    color: #333;
+    text-shadow: 1px 1px #fff;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 35px;
+    letter-spacing: 1px;
+}
+
+.nav-link{
+    color: #454949;
+}
+
+.nav-link:hover{
+    color: #eeb744;
+}
+
+.active{
+    color: #eeb744 !important;
+}
+
+.navbar-float-right{
+    padding-left: 40% !important;
+}
+
+
+.home-img{
+    width: 100%;
+    height: 700px;
+}
+
+.col-padding{
+    padding: 0px;
+}
+
+.home-right{
+    background: #efdbdf;
+}
+
+.home-info{
+    padding-top: 170px;
+    padding-left: 40px;
+}
+
+.home-header{
+    padding: 10px;
+    font-size: 12px;
+    font-weight: 400;
+    color: #a39698;
+}
+.home-sub-header, .about-header{
+    padding: 10px;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.2;
+}
+.home-text, .about-text{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #a39698;
+}
+.get-started-btn{
+    background-color: transparent;
+    border: 3px solid #232B2B;
+    border-radius: 100px;
+    color: #232B2B;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 1.6px;
+    padding: 12px 35px;
+    margin-top: 42px;
+}
+.get-started-btn:hover{
+    color: #fff;
+    background: #eeb744;
+    border: 3px solid #eeb744;
+}
+
+
+/* about me section */
+.about-me{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+
+.about-sub-header{
+    padding: 10px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #f2aa15;
+}
+
+.about-img{
+    width: 100%;
+    height: 350px;
+}
+
+.my-skills{
+    background: #eeb744;
+}
+.my-skills-header, .my-experience-header, .my-education-header{
+    padding: 30px;
+    font-size: 38px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+}
+.my-skills-text, .my-experience-text, .my-education-text{
+    padding-left: 30px;
+    font-size: 14px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.fa-icon{
+    font-size:36px;
+    color: #fff;
+}
+
+.service-text{
+    padding: 10px 10px 50px 10px;
+    font-size: 16px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.service-header, .contact-header{
+    padding: 10px;
+    font-size: 32px;
+    font-weight: 300;
+    line-height: 1.2;
+    color: #fff;
+}
+
+.progress{
+    height:3px;
+}
+.progress-bar {
+    background-color:#454949;
+}
+
+.progress-section{
+    padding: 30px;
+}
+.skill{
+    font-weight: 500;
+}
+.skill-progress{
+    float: right;
+    font-weight: 500;
+    color: #fff;
+}
+
+/* experience section */
+.exprience-img{
+    height: 350px;
+    width: 100%;
+}
+.experience-section{
+    background: #e75d5d;
+    height: 350px;
+    width: 100%;
+}
+.laptop-icon{
+    display: table-cell;
+    padding: 30px 30px 30px 30px;
+}
+.experience-info, .education-info{
+    display: table-cell;
+}
+.experience-header, .education-header{
+    font-size: 28px;
+    color: #fff;
+    font-weight: 300;
+}
+.experience-text, .education-text{
+    color: #fff;
+}
+.exprience-duration{
+       font-weight: 700;
+    font-size: 16px;
+    color: #454949;
+}
+
+/* education section */
+.education-section{
+    background: #eeb744;
+    height: 350px;
+    width: 100%;
+}
+
+/* contact section */
+.contact-img{
+    height: 600px;
+    width: 100%;
+}
+.contact-info{
+    height: 600px;
+    width: 100%;
+    background: #454949;
+}
+.contact-padding{
+    padding-top: 30px;
+    padding-left: 30px;
+}
+.contact-text{
+    font-size: 14px;
+    font-weight: 200;
+    padding-left: 10px;
+    color: #c4c0c0;
+}
+
+.contact-section{
+    height: 600px;
+    width: 100%;
+    background: #e75d5d;
+}
+.send-btn{
+    background-color: #fff;
+    border: 3px solid #fff;
+    border-radius: 100px;
+    color: #232B2B;
+    font-size: 14px;
+    padding: 12px 80px;
+    margin-top: 42px;
+}
+.send-btn:hover{
+    color: #fff;
+    background: #e75d5d;
+    border: 3px solid #fff;
+}
+
+
+
+
+ /* footer */
+.footer-padding{
+    padding-top: 200px;
+    padding-bottom: 200px;
+}
+
+.social-icon{
+    color: #999;
+    border-radius: 100px;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 4px 10px 4px;
+}
+
+.social-icon:hover{
+    color: #fff;
+    background: #eeb744;
+    border-radius: 100px;
+    font-size: 16px;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    vertical-align: middle;
+    position: relative;
+    margin: 22px 4px 10px 4px;
+}
+
+.contact-form{
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.form-control {
+    background: transparent;
+    border: none;
+    border-bottom: 1px solid #E3AE57;
+    border-radius: 0px;
+    box-shadow: none;
+    color: #ffffff;
+    font-size: 18px;
+    margin-top: 10px;
+    margin-bottom: 25px;
+}
+
+.imageContainer {
+    width:100%;
+    height:400px;
+    background-image: url(../images/quotes-bg.jpg);
+ }
+
+.star-icon{
+    font-size: 48px;
+    color: white;
+}
+.quote{
+    font-size: 40px;
+    color: #fff;
+    font-weight: 300;
+    margin: auto;
+    width: 60%;
+    padding-top: 20px;
+}
+.quote-text{
+    color: #b2acac;
+}
+
+
+/* Animation */
+
+@keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes fadeInUp {
+    from {
+        transform: translate3d(0,40px,0)
+    }
+
+    to {
+        transform: translate3d(0,0,0);
+        opacity: 1
+    }
+}
+
+.animated {
+    animation-duration: 1s;
+    animation-fill-mode: both;
+    -webkit-animation-duration: 1s;
+    -webkit-animation-fill-mode: both
+}
+
+.animatedFadeInUp {
+    opacity: 0
+}
+
+.fadeInUp {
+    opacity: 0;
+    animation-name: fadeInUp;
+    -webkit-animation-name: fadeInUp;
+}
+
+
+
+@media screen and ( max-width: 750px){
+    .experience-section{
+        background: #e75d5d;
+        height: auto;
+        width: 100%;
+    }
+}
