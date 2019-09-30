@@ -1,0 +1,157 @@
+
+/* card css start*/
+
+.card {
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    border-top: 5px solid #17a2b8;
+    border-radius: 0px !important;
+}
+
+.card-body{
+    min-height: 500px;
+}
+
+.card-header{
+    background-color: #e8f5f8;
+    display: inline-block;
+    text-align: center;
+}
+.sub-header{
+    float: right ;
+    font-size: 9px;
+    padding-top: 7px;
+}
+.custom-card-footer{
+    background-color: #f3f7f8;
+}
+
+.footer-left {
+  float: left;
+  text-align: left;
+  display: inline;
+}
+
+.footer-right {
+  float: right;
+  text-align: right;
+  display: inline;
+}
+
+/* card css end */
+
+
+/* card body css start */
+.btn{
+    border-radius: 0px !important;
+}
+
+
+
+.nav-link.active{
+    color: #007bff !important;
+    background-color: #fff !important;
+    font-weight: 700 !important;
+    border-bottom: 3px solid #007bff !important;
+    border-radius: 0 !important;
+}
+
+
+.action-line{
+    background-color: #ebeced;
+    padding: 6px;
+    margin-bottom: 10px;
+}
+
+.square {
+  height: 27px;
+  width: 27px;
+  border: 1px solid #b2a8a8;
+  display: inline-block;
+}
+
+.action-text{
+    display: inline-block;
+    font-weight: 600;
+    margin-left: 8px;
+    font-size: 13px;
+
+}
+
+.add-action{
+    font-size: 12px;
+}
+/* card body css end */
+
+
+/* input filed css start */
+
+.filed-width-50{
+    width: 50%;
+}
+
+.filed-width-40{
+    width: 40%;
+}
+
+.field {
+  display: flex;
+  flex-flow: column-reverse;
+}
+
+label, input {
+  transition: all 0.2s;
+  touch-action: manipulation;
+}
+
+input {
+  font-size: 12px;
+  border: 0;
+  border-bottom: 1px dotted #ccc;
+  font-family: inherit;
+  -webkit-appearance: none;
+  border-radius: 0;
+  padding: 0;
+  cursor: text;
+}
+
+input:focus {
+  outline: 0;
+  border-bottom: 1px dotted #666;
+}
+
+label {
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: 10px;
+   margin-bottom: 0px;
+}
+
+input:placeholder-shown + label {
+  cursor: text;
+  max-width: 66.66%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  transform-origin: left bottom;
+  transform: translate(0, 1.125rem) scale(1.5);
+}
+
+::-webkit-input-placeholder {
+  opacity: 0;
+  transition: inherit;
+}
+
+input:focus::-webkit-input-placeholder {
+  opacity: 1;
+}
+
+input:not(:placeholder-shown) + label,
+input:focus + label {
+  transform: translate(0, 0) scale(1);
+  cursor: pointer;
+}
+
+/* input filed css end */
+
+
+
